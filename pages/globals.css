@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -33,7 +37,6 @@ a {
 }
 
 .descriptionText {
-  white-space: pre;
   white-space: pre-wrap; /* css-3 */
   white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
   white-space: -pre-wrap; /* Opera 4-6 */
@@ -45,52 +48,4 @@ a {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-}
-
-/* React responsive carousel */
-.carousel-root {
-  width: 100% !important;
-}
-
-.carousel .control-dots .dot {
-  padding: 5px !important;
-}
-
-.carousel.carousel-slider .control-arrow {
-  top: 40% !important;
-  height: 25% !important;
-  padding: 10px !important;
-  background: rgba(0, 0, 0, 0.5) !important;
-}
-
-.carousel.carousel-slider .control-arrow:hover,
-.carousel.carousel-slider .control-arrow:focus {
-  background: rgba(0, 0, 0, 0.75) !important;
-}
-
-/* React carousel custom styling */
-/* square buttons */
-.rec.rec-arrow {
-  border-radius: 8px !important;
-  background: var(--primary-color) !important;
-  color: white;
-}
-
-.rec.rec-arrow:hover {
-  outline: none !important;
-  background: var(--primary-dark-color) !important;
-}
-
-.rec-dot_active {
-  background-color: var(--primary-color) !important;
-}
-
-.rec-dot:hover,
-.rec-dot_active {
-  box-shadow: 0 0 1px 3px var(--primary-dark-color) !important;
-}
-
-.rec.rec-arrow:disabled {
-  opacity: 0.5;
-  background: rgba(0, 0, 0, 0.7) !important;
 }
