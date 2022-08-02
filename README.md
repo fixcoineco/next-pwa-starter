@@ -18,6 +18,7 @@ The dependency doctrine is:
 
 - A component or module in `app` must not import anything from `feature`
 - A feature must not import any other feature
+- A feature is used in `pages` only.
 
 ### Backend-for-Frontend (BFF)
 
