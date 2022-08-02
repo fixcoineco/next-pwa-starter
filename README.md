@@ -24,6 +24,10 @@ The dependency doctrine is:
 Additionally, the project comes with a "Backend-for-Frontend"-pattern. As NextJS offers its own api routes the pattern fits nicely to aggregate multiple backend service. The responsibilityu of the BFF is to gather and transform all backend data such it can directly be used in the frontend, may it in SSR or CSR.
 Similar to the feature oriented approach, all BFF-related operations are within the `bff` folder.
 
+
+![PWA Application Architecture - View 2 (2)](https://user-images.githubusercontent.com/3920663/182475745-cb16e1ff-7ede-4639-88f1-1bf51c2f5410.png)
+
+
 ## Getting Started
 
 Run `yarn dev` and open `http://localhost:3000`
