@@ -1,10 +1,14 @@
 import React from "react";
+import { ChildrenProps } from "@/types/ChildrenProps";
 
 interface Props {
   href: string;
 }
 
-export const SafeExternalLink: React.FC<Props> = ({ href, children }) => (
+export const SafeExternalLink: React.FC<Props & ChildrenProps> = ({
+  href,
+  children,
+}) => (
   <a
     href={href}
     rel="noopener noreferrer"

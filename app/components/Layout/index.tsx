@@ -3,8 +3,9 @@ import { useRouter } from "next/router";
 
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
+import { ChildrenProps } from "../../../types/ChildrenProps";
 
-export const Layout: FC = ({ children }) => {
+export const Layout: FC<ChildrenProps> = ({ children }) => {
   const router = useRouter();
 
   useEffect(() => {

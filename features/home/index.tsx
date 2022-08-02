@@ -1,5 +1,6 @@
 import { Status } from "@/bff/types/status";
 import { WelcomeDialog } from "@/features/home/WelcomeDialog";
+import { ChildrenProps } from "../../types/ChildrenProps";
 
 interface Props {
   status: Status;

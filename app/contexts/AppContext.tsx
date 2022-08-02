@@ -1,6 +1,7 @@
 import { FC, createContext } from "react";
 import { isClientSide } from "../isClientSide";
 import { isMobile } from "react-device-detect";
+import { ChildrenProps } from "../../types/ChildrenProps";
 
 export interface AppContextType {
   IsClientSide: boolean;
@@ -15,6 +16,6 @@ const config: AppContextType = {
 
 export const AppContext = createContext<AppContextType>(config);
 
-export const AppContextProvider: FC = ({ children }) => {
+export const AppContextProvider: FC<ChildrenProps> = ({ children }) => {
   return <AppContext.Provider value={config}>{children}</AppContext.Provider>;
 };

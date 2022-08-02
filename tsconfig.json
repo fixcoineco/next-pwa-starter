@@ -19,7 +19,8 @@
       "@/app/*": ["app/*"],
       "@/features/*": ["features/*"],
       "@/states/*": ["states/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/types/*": ["types/*"]
     },
     "incremental": true
   },
